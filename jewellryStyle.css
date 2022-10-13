@@ -36,4 +36,16 @@ ul{
     height:300px;
     width:300px;
 }
+.ourCollection_hover::-webkit-scrollbar{
+    display: none !important;
+}
+
+.ourCollection_div{
+    display: block;
+    background-color: var(--back_color);
+    padding: 20px 20px 20px 0px ;
+}
+.ourCollection:hover  .ourCollection_div{
+    display: block ;
+}
 /* ourCollection_hover close */
