@@ -30,3 +30,10 @@ ul{
     height: 50px !important;
 }
 /* header close */
+
+/* ourCollection_hover open */
+.ourCollection_hover .figure img{
+    height:300px;
+    width:300px;
+}
+/* ourCollection_hover close */
