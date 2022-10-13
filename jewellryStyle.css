@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+ul{
+    list-style: none;
+}
+
+:root{
+    --back_color:rgb(255 243 202);
+}
+
+/* top label header open */
+.topLabel{
+    background-color: var(--back_color);
+}
+.topLabel ul{
+    display: flex;
+    justify-content: flex-end;
+}
+/* top label header close */
+
+/* header open */
+.headerLogo img{
+    height: 50px !important;
+}
+/* header close */
+
+/* ourCollection_hover open */
+.ourCollection_hover .figure img{
+    height:300px;
+    width:300px;
+}
+/* ourCollection_hover close */
