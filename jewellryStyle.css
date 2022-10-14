@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body {
+    position: relative;
+}
 
 a,
 a:hover {
@@ -50,6 +53,7 @@ ul {
     height: 220px;
     width: 220px;
 }
+/* ourCollection_hover close */
 
 .ourCollection_item {
     margin: auto 20px;
@@ -94,12 +98,14 @@ ul {
     left: 0;
     right: 0;
     padding-top: 30px;
+    z-index: 999;
 }
 
 .ourCollection_images {
     padding: 30px 20px 0px 0px;
     box-shadow: 1px 1px 20px 2px #4f4e478a;
     border-radius: 8px;
+    background: white;
 }
 
 .ourCollection:hover .ourCollection_div {
