@@ -55,13 +55,6 @@ ul {
 }
 /* ourCollection_hover close */
 
-
-.slider-section {
-    position: absolute;
-    top: 100px;
-    z-index: -2;
-}
-
 .ourCollection_item {
     margin: auto 20px;
 }
@@ -105,12 +98,14 @@ ul {
     left: 0;
     right: 0;
     padding-top: 30px;
+    z-index: 999;
 }
 
 .ourCollection_images {
     padding: 30px 20px 0px 0px;
     box-shadow: 1px 1px 20px 2px #4f4e478a;
     border-radius: 8px;
+    background: white;
 }
 
 .ourCollection:hover .ourCollection_div {
