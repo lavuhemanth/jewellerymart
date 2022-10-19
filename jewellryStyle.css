@@ -167,19 +167,19 @@ ul {
   }
   
   .image {
-    display: block;
-    width: 100%;
-    height: auto;
+    position: relative;
+    /* height: 600px; */
+    overflow: hidden;
   }
   
   .overlay {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     background-color:#000000a8;
     overflow: hidden;
-    width: 0;
+    width: 0px;
     height: 100%;
     transition: .5s ease;
   }
@@ -229,6 +229,8 @@ ul {
 /* our collection */
 
 .footer-section {
-    position: absolute;
+    position: relative;
+    background-color: black;
+    color: white;
     bottom: 0;
 }
