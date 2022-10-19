@@ -42,6 +42,13 @@ ul {
 .headerLogo img {
     height: 50px !important;
 }
+.scrol{
+  top: 0;
+  transition: top 3s;
+  z-index: 100;
+  position: fixed;
+  transition: 0.5s;
+}
 
 /* header close */
 
@@ -130,6 +137,10 @@ ul {
     justify-content: center;
  
     
+  }
+
+  .footer_logo{
+    height: 70px;
   }
   
   
