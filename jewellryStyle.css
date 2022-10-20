@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 body {
     position: relative;
@@ -139,17 +140,6 @@ ul {
     
   }
 
-  .footer_logo{
-    height: 70px;
-  }
-  
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-    
-    
-  }
   
   .row {
     display: -ms-flexbox; 
@@ -244,4 +234,16 @@ ul {
     background-color: black;
     color: white;
     bottom: 0;
+}
+
+.footer_logo{
+  height: 70px;
+}
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+  
+  
 }

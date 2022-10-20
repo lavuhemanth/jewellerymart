@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 body {
     position: relative;
@@ -40,13 +41,14 @@ ul {
 
 /* header open */
 .headerLogo img {
-    height: 70px !important;
+    height: 50px !important;
 }
 .scrol{
-    top: 0;
-    transition: top 3s;
-    z-index: 100;
-    position: fixed;
+  top: 0;
+  transition: top 3s;
+  z-index: 100;
+  position: fixed;
+  transition: 0.5s;
 }
 
 /* header close */
