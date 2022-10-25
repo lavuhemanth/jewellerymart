@@ -19,7 +19,7 @@
     <!-- bootstrap links close -->
 
     <!-- css file  -->
-    <link rel="stylesheet" href="catageory.css">
+    <link rel="stylesheet" href="jewellryStyle.css">
     <title>jewellry catageory</title>
 </head>
 
@@ -45,59 +45,76 @@
             <div id="header" class="container-fluid bg-white">
                 <div class="d-block container-fluid container">
                     <div class="row justify-content-between align p-3 align-items-end">
-                        
                         <div class="col-lg-2 col-sm-2 col-2 headerLogo d-flex justify-content-sm-center">
-                            <a href="./index.html"><img src="./images/logo file.svg" class="img-fluid" alt="logo" /></a>
+                           <a href="./index.html"> <img src="./images/logo file.svg" class="img-fluid" alt="logo" /></a>
                         </div>
-                        <div class="col-lg-10 col-sm-10 col-10">
+                        <div class="col-lg-10 col-sm-10 col-10 d-none d-md-block ">
                             <ul class="d-flex justify-content-end">
-                                <li class="mx-3 px-sm-3"><a href="./index.html">Home</a></li>
-                                <li class="mx-3 px-sm-3 ourCollection">
-                                    <a href="#">Our Collection</a>
-                                    <ul class="ourCollection_div container-fluid">
+                                <li class="mx-3 px-sm-3 header_links"><a href="./index.html">Home</a></li>
+                                <li class="mx-3 px-sm-3 header_links ourCollection">
+                                    <a href="#our_collection">Our Collection</a>
+                                    <ul class="ourCollection_div ">
                                         <li>
                                             <!-- our collection hover open -->
-                                            <div class="d-md-none container-fluid ourCollection_sm_text">
-                                                <ul class="px-0">
-                                                    <li>Necklace</li>
-                                                    <li>Ear Rings</li>
-                                                </ul>
-                                            </div>
-                                            <div class="ourCollection_images container d-md-block d-none">
-                                                <div class="ourCollection_headline">
-                                                    <p>Our collection</p>
+                                            
+                                            <div class="ourCollection_images  d-md-block d-none">
+                                              
+                                                <div class="ourCollection_headline justify-content-center d-flex">
+                                                  <p>Our collection</p>
+                                              </div>
+                                             <div class="ourCollection_hover row d-xs-block  justify-content-center">
+                                                <div class="col-md-3 d-flex justify-content-center align-center">
+    
+                                                  <ul class="list-group list-group-flush our_collection_hoverList">
+                                                    <li class="list-group-item h5"><a href="./catageory.html">Necklace</a></li>
+                                                    <li class="list-group-item h5"><a href="./earrings_catagerory.html">Ear Rings</a></li>
+                                                    <li class="list-group-item h5"><a href="./catageory.css">Healinfg Stones</a></li>
+                                                  </ul>
+    
                                                 </div>
-                                                <div class="ourCollection_hover d-xs-block container">
-                                                    <div class="ourCollection_item">
-                                                        <a href="./catageory.html">
-                                                            <figure class="figure">
-                                                                <img src="./images/pendent.webp"
-                                                                    class="figure-img rounded" alt="..." />
-                                                                <figcaption
-                                                                    class="card-title d-flex justify-content-center">
-                                                                    Necklace
-                                                                </figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </div>
-                                                    <div class="ourCollection_item">
-                                                        <a href="./earrings_catagerory.html">
-                                                            <figure class="figure">
-                                                                <img src="./images/ring.jpg" class="figure-img rounded"
-                                                                    alt="..." />
-                                                                <figcaption
-                                                                    class="card-title d-flex justify-content-center">
-                                                                    Ear Rings
-                                                                </figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </div>
+                                                <div class="col-md-9">
+                                                   <div class="d-flex justify-content-end">
+                                                    <div class="ourCollection_item m-0 p-0 ">
+                                                      <a href="./catageory.html">
+                                                        <div class="card position-relative figure">
+                                                          <img src="./images/pendent.webp" class="img-fluid"  alt="pendent">                                                    
+                                                          <div class="card-body position-absolute">
+                                                            <p class="card-text">Necklace <hr></p>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                  </div>
+                                                  <div class="ourCollection_item m-0 p-0 ">
+                                                    <a href="./catageory.html">
+                                                      <div class="card position-relative figure">
+                                                        <img src="./images/earrings2.jpeg" class="img-fluid" alt="pendent">                                                    
+                                                        <div class="card-body position-absolute">
+                                                          <p class="card-text">Ear Rings <hr ></p>
+                                                        </div>
+                                                      </div>
+                                                    </a>
                                                 </div>
+                                                <div class="ourCollection_item m-0 p-0 ">
+                                                  <a href="./catageory.html">
+                                                    <div class="card position-relative figure">
+                                                      <img src="./images/ring.jpg" class="img-fluid" alt="pendent">                                                    
+                                                      <div class="card-body position-absolute">
+                                                        <p class="card-text">Healing Stones<hr></p>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                              </div>  
+                                                   </div>
+                                                </div>
+                                                   
+                                              </div>
+                                               
                                             </div>
                                             <!-- our collection hover close -->
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="mx-3 px-sm-3 header_links"><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -362,50 +379,84 @@
 
     <!-- catagory 1 close -->
 
-      <!-- Footer -->
-  <footer class="footer-section">
-    <div class="d-flex container justify-content-between align-items-center">
-      <div class="container row pt-1">
-        <div class="col-lg-3 p-1 my-3 footer_logo d-flex justify-content-center">
-          <img src="./images/logo color.png" class="img-fluid h-100 " alt="">
-        </div>
-        <div class="col-lg-4 d-flex my-3 justify-content-center align-items-center">
-          <p class="m-0">&#169 All rights reserved Meraki</p>
-        </div>
-        <div class="col-lg-5 d-flex justify-content-center my-3 align-items-center">
-          <ul class="d-flex mb-0 p-0 justify-content-center align-items-center">
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-envelope text-white"></i></a>
-            </li>
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-instagram text-white"></i></a>
-            </li>
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-linkedin text-white"></i></a>
-            </li>
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-twitter text-white"></i></a>
-            </li>
+    <div class=" our_collection_toggle" id="catageories">
+        <div class=" position-fixed toggle_div ">
+          <ul class="bg-white px-5 py-4 w-100">
+            <li><a class="dropdown-item p-3" href="./catageory.html">Necklace</a></li>
+            <li><a class="dropdown-item p-3" href="./earrings_catagerory.html">Ear Rings</a></li>
+            <li><a class="dropdown-item p-3" href="./catageory.html">Healing Stones</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </footer> 
-
-    <!-- script open -->
-      <script>
-        let header = document.getElementById("header");
-        window.onscroll= function (){
+         </div>
+       </div>
+      
+        <!-- Footer -->
+        <footer class="footer-section py-3">
+          <div class="d-flex container justify-content-between align-items-center">
+            <div class="container row pt-1">
+              <div class="col-lg-3 p-1 my-3 footer_logo d-flex justify-content-center">
+                <img src="./images/logo color.png" class="img-fluid h-100 " alt="">
+              </div>
+              <div class="col-lg-4 d-flex my-3 justify-content-center align-items-center">
+                <p class="m-0">&#169 All rights reserved Meraki</p>
+              </div>
+              <div class="col-lg-5 d-flex justify-content-center my-3 align-items-center">
+                <ul class="d-flex mb-0 p-0 justify-content-center align-items-center">
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-envelope text-white"></i></a>
+                  </li>
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-instagram text-white"></i></a>
+                  </li>
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-linkedin text-white"></i></a>
+                  </li>
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-twitter text-white"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div>
+            <footer class="container-fluid footer d-md-none position-fixed footer_bar " style="bottom: 0; ">
+              
+              <div class="row bg-black text-center pt-2">
+                  <a href="./catageory.html" class="col h4 text-white "><i class="bi bi-house-door"></i></a>
+                  
+                  <div class="col h-100" id="toggle_icon">
+                   
+                    <a class="text-white h4 h-100" href="#"  data-bs-toggle="dropdown" >
+                      <i class="bi bi-grid " class="bg-grey h-100"></i>
+                    </a>
+                  
+                  </div>
+                  <a href="#" class="col h4 text-white "><i class="bi bi-person"></i></a>
+              </div>
+          </footer>
+          </div>
+        </footer>
+        <!-- script open -->
+        <script>
+          let header = document.getElementById("header");
+          window.onscroll = function () {
             let scroll = window.scrollY;
-            if(scroll>0){
-                header.classList.add("scrol")
+            if (scroll > 0) {
+              header.classList.add("scrol")
             }
-            else{
-                header.classList.remove("scrol")
+            else {
+              header.classList.remove("scrol")
             }
-        }
-      </script>
-    <!-- script close -->
+          }
+      
+          let catageory =document.getElementById("catageories");
+          let toggle_icon =document.getElementById("toggle_icon");
+      
+          toggle_icon.addEventListener("click",()=>{
+            catageory.classList.toggle("toggle_display")
+          })
+        </script>
+        <!-- script close -->
 </body>
 
 </html>
