@@ -54,14 +54,25 @@ ul {
   transition: 0.5s;
 }
 
-.header_links:hover a{
-  font-weight: 900;
-  padding: 0px;
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
 }
-.header_links a{
-  
-  letter-spacing: 0.9px;
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #000;
+  transition: width 0.5s ease-in-out;
 }
+
+.cool-link:hover::after {
+  width: 100%;
+}
+
 
 /* header close */
 
