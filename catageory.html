@@ -19,14 +19,14 @@
     <!-- bootstrap links close -->
 
     <!-- css file  -->
-    <link rel="stylesheet" href="catageory.css">
+    <link rel="stylesheet" href="jewellryStyle.css">
     <title>jewellry catageory</title>
 </head>
 
 <body>
     <header>
         <div>
-            <div class="topLabel container-fluid d-block">
+            <div class="topLabel container-fluid d-md-block d-none ">
                 <ul>
                     <li class="mx-3 my-1 px-2">
                         <a href="#"><i class="bi bi-envelope"></i></a>
@@ -45,59 +45,76 @@
             <div id="header" class="container-fluid bg-white">
                 <div class="d-block container-fluid container">
                     <div class="row justify-content-between align p-3 align-items-end">
-                        
                         <div class="col-lg-2 col-sm-2 col-2 headerLogo d-flex justify-content-sm-center">
-                            <a href="./index.html"><img src="./images/logo file.svg" class="img-fluid" alt="logo" /></a>
+                           <a href="./index.html"> <img src="./images/logo file.svg" class="img-fluid" alt="logo" /></a>
                         </div>
-                        <div class="col-lg-10 col-sm-10 col-10">
+                        <div class="col-lg-10 col-sm-10 col-10 d-none d-md-block ">
                             <ul class="d-flex justify-content-end">
-                                <li class="mx-3 px-sm-3"><a href="./index.html">Home</a></li>
-                                <li class="mx-3 px-sm-3 ourCollection">
-                                    <a href="#">Our Collection</a>
-                                    <ul class="ourCollection_div container-fluid">
+                                <li class="mx-3 px-sm-3 header_links"><a href="./index.html" class="cool-link">Home</a></li>
+                                <li class="mx-3 px-sm-3 header_links ourCollection">
+                                    <a href="#our_collection" class="cool-link">Our Collection</a>
+                                    <ul class="ourCollection_div ">
                                         <li>
                                             <!-- our collection hover open -->
-                                            <div class="d-md-none container-fluid ourCollection_sm_text">
-                                                <ul class="px-0">
-                                                    <li>Necklace</li>
-                                                    <li>Ear Rings</li>
-                                                </ul>
-                                            </div>
-                                            <div class="ourCollection_images container d-md-block d-none">
-                                                <div class="ourCollection_headline">
-                                                    <p>Our collection</p>
+                                            
+                                            <div class="ourCollection_images  d-md-block d-none">
+                                              
+                                                <div class="ourCollection_headline justify-content-center d-flex">
+                                                  <p>Our collection</p>
+                                              </div>
+                                             <div class="ourCollection_hover row d-xs-block  justify-content-center">
+                                                <div class="col-md-3 d-flex justify-content-center align-center">
+    
+                                                  <ul class="list-group list-group-flush our_collection_hoverList">
+                                                    <li class="list-group-item h5"><a href="./catageory.html">Necklace</a></li>
+                                                    <li class="list-group-item h5"><a href="./earrings_catagerory.html">Ear Rings</a></li>
+                                                    <li class="list-group-item h5"><a href="./healingStone_catageory.html">Healinfg Stones</a></li>
+                                                  </ul>
+    
                                                 </div>
-                                                <div class="ourCollection_hover d-xs-block container">
-                                                    <div class="ourCollection_item">
-                                                        <a href="./catageory.html">
-                                                            <figure class="figure">
-                                                                <img src="./images/pendent.webp"
-                                                                    class="figure-img rounded" alt="..." />
-                                                                <figcaption
-                                                                    class="card-title d-flex justify-content-center">
-                                                                    Necklace
-                                                                </figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </div>
-                                                    <div class="ourCollection_item">
-                                                        <a href="./earrings_catagerory.html">
-                                                            <figure class="figure">
-                                                                <img src="./images/ring.jpg" class="figure-img rounded"
-                                                                    alt="..." />
-                                                                <figcaption
-                                                                    class="card-title d-flex justify-content-center">
-                                                                    Ear Rings
-                                                                </figcaption>
-                                                            </figure>
-                                                        </a>
-                                                    </div>
+                                                <div class="col-md-9">
+                                                   <div class="d-flex justify-content-end">
+                                                    <div class="ourCollection_item m-0 p-0 ">
+                                                      <a href="./catageory.html">
+                                                        <div class="card position-relative figure">
+                                                          <img src="./images/pendent.webp" class="img-fluid"  alt="pendent">                                                    
+                                                          <div class="card-body position-absolute">
+                                                            <p class="card-text">Necklace <hr></p>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                  </div>
+                                                  <div class="ourCollection_item m-0 p-0 ">
+                                                    <a href="./earrings_catagerory.html">
+                                                      <div class="card position-relative figure">
+                                                        <img src="./images/earrings2.jpeg" class="img-fluid" alt="pendent">                                                    
+                                                        <div class="card-body position-absolute">
+                                                          <p class="card-text">Ear Rings <hr ></p>
+                                                        </div>
+                                                      </div>
+                                                    </a>
                                                 </div>
+                                                <div class="ourCollection_item m-0 p-0 ">
+                                                  <a href="./healingStone_catageory.html">
+                                                    <div class="card position-relative figure">
+                                                      <img src="./images/c-imgs/healing_stones.avif" class="img-fluid" alt="pendent">                                                    
+                                                      <div class="card-body position-absolute">
+                                                        <p class="card-text">Healing Stones<hr></p>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                              </div>  
+                                                   </div>
+                                                </div>
+                                                   
+                                              </div>
+                                               
                                             </div>
                                             <!-- our collection hover close -->
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="mx-3 px-sm-3 header_links"><a href="#" class="cool-link">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -127,7 +144,7 @@
                 <div class="row ">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/agate_01.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
                                 <p class="rounded-pill p-1 px-3">GS-111</p>
                             </div>
@@ -142,7 +159,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">AMETHYST</h5>
+                                <h5 class="card-title">AMETHYST & AGATE</h5>
                                 <p class="card-text">Length: 18 INCH</p>
                                 <p class="h4 my-0">Rs 2500</p>
                             </div>
@@ -150,9 +167,9 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace2.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/shell_peral_02.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
+                                <p class="rounded-pill p-1 px-3">GS-112</p>
                             </div>
                             <div class="m-3   w-25  position-absolute bottom-0 end-0">
                                 <div class="input-group input-group-sm ">
@@ -165,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">SHELL PEARL</h5>
+                                <h5 class="card-title">SHELL PEARL AND SMOKY</h5>
                                 <p class="card-text">Length: 18 INCH</p>
                                 <p class="h4 my-0">Rs 1200</p>
                             </div>
@@ -173,9 +190,9 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/roas_o3.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
+                                <p class="rounded-pill p-1 px-3">GS-113</p>
                             </div>
                             <div class="m-3   w-25  position-absolute bottom-0 end-0">
                                 <div class="input-group input-group-sm ">
@@ -188,7 +205,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">ROSE QUARTZ</h5>
+                                <h5 class="card-title">ROSE QUARTZ, PEARL & MONALISSA</h5>
                                 <p class="card-text">Length: 18 INCH</p>
                                 <p class="h4 my-0">Rs 2500</p>
                             </div>
@@ -196,9 +213,9 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace2.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/grayPeral_04.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
+                                <p class="rounded-pill p-1 px-3">GS-114</p>
                             </div>
                             <div class="m-3   w-25  position-absolute bottom-0 end-0">
                                 <div class="input-group input-group-sm ">
@@ -211,7 +228,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">GREEN PEARL</h5>
+                                <h5 class="card-title">BLACK SPINAL AND GREY PEARL </h5>
                                 <p class="card-text">Length: 25 INCH</p>
                                 <p class="h4 my-0">Rs 4500</p>
                             </div>
@@ -219,9 +236,9 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/aqua_05.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
+                                <p class="rounded-pill p-1 px-3">GS-115</p>
                             </div>
                             <div class="m-3   w-25  position-absolute bottom-0 end-0">
                                 <div class="input-group input-group-sm ">
@@ -242,9 +259,9 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace2.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/apptee_07.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
+                                <p class="rounded-pill p-1 px-3">GS-116</p>
                             </div>
                             <div class="m-3   w-25  position-absolute bottom-0 end-0">
                                 <div class="input-group input-group-sm ">
@@ -257,86 +274,17 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">AMETHYST</h5>
-                                <p class="card-text">Length: 18 INCH</p>
-                                <p class="h4 my-0">Rs 2500</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="card m-3  catageory_items">
-                            <img src="./images/necklace.jpeg" class="card-img-top" alt="AMETHYST">
-                            <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
-                            </div>
-                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
-                                <div class="input-group input-group-sm ">
-                                    <span class="input-group-text bg-success text-white bg-opacity-60"
-                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
-                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
-                                    <span class="form-control d-flex justify-content-center"
-                                        aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-sm">9</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">SHELL PEARL</h5>
-                                <p class="card-text">Length: 18 INCH</p>
-                                <p class="h4 my-0">Rs 1200</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="card m-3  catageory_items">
-                            <img src="./images/necklace2.jpeg" class="card-img-top" alt="AMETHYST">
-                            <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
-                            </div>
-                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
-                                <div class="input-group input-group-sm ">
-                                    <span class="input-group-text bg-success text-white bg-opacity-60"
-                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
-                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
-                                    <span class="form-control d-flex justify-content-center"
-                                        aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-sm">9</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">ROSE QUARTZ</h5>
-                                <p class="card-text">Length: 18 INCH</p>
-                                <p class="h4 my-0">Rs 2500</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="card m-3  catageory_items">
-                            <img src="./images/necklace.jpeg" class="card-img-top" alt="AMETHYST">
-                            <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
-                            </div>
-                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
-                                <div class="input-group input-group-sm ">
-                                    <span class="input-group-text bg-success text-white bg-opacity-60"
-                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
-                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
-                                    <span class="form-control d-flex justify-content-center"
-                                        aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-sm">9</span>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">GREEN PEARL</h5>
-                                <p class="card-text">Length: 25 INCH</p>
+                                <h5 class="card-title">APPETITE AND PEARL</h5>
+                                <p class="card-text">Length: 22 INCH</p>
                                 <p class="h4 my-0">Rs 4500</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="card m-3  catageory_items">
-                            <img src="./images/necklace2.jpeg" class="card-img-top" alt="AMETHYST">
+                            <img src="./images/products/beads/messh_07.jpeg" class="card-img-top" alt="AMETHYST">
                             <div class="sql_tag  text-black">
-                                <p class="rounded-pill p-1 px-3">GS-111</p>
+                                <p class="rounded-pill p-1 px-3">GS-117</p>
                             </div>
                             <div class="m-3   w-25  position-absolute bottom-0 end-0">
                                 <div class="input-group input-group-sm ">
@@ -349,9 +297,1251 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">AQUA AND PERAL</h5>
+                                <h5 class="card-title">MASH AND TIGER EYE</h5>
+                                <p class="card-text">Length: 14 INCH</p>
+                                <p class="h4 my-0">Rs 1200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/quartaz_09.jpeg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-118</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ AND PEARL</h5>
+                                <p class="card-text">Length: 15 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/blue_quator_09.jpeg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-119</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLUE QUARTZ AND MOON STONES</h5>
+                                <p class="card-text">Length: 19 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/10_beads.jpeg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-120</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">TURQUIOSE</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-121.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-121</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ AND PEARL</h5>
+                                <p class="card-text">Length: 24 INCH</p>
+                                <p class="h4 my-0">Rs 2500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-122.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-122</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">TURQUIOSE & PEARL</h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 2400</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-123.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-123</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 1000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-124.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-124</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ & GREY PEARL</h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 2400</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-125.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-125</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ, PEARL & AQUA</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-126.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-126</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ, PEARL </h5>
+                                <p class="card-text">Length: 24 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-127.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-127</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK ONEX, BLACK SPINAL & SHELL PEARL</h5>
+                                <p class="card-text">Length: 34 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-128.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-128</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK ONEX, AGATE</h5>
+                                <p class="card-text">Length: 24 INCH</p>
+                                <p class="h4 my-0">Rs 2400</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-129.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-129</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ AND AQUA</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 1400</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-130.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-130</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ AND PEARL</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 2500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-131.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-131</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">AGATE AND PEARL CHIPS</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 1200</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-132.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-132</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">AGATE, CITRIN, QUARTZ</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-133.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-133</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">SMOKY</h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-134.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-134</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">GREEN ONAX AND PEARL</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 2500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-135.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-135</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">CITRIN AND SMOKY</h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-136.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-136</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL, FLOURITE AND QUARTZ</h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-137.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-137</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MOON STONE & BLACK QUARTZ</h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 3500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-138.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-138</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">SMOKY</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 2000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-139.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-139</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-139..jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-139</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL & QUARTZ</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3700</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-140.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-140</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MONALISSA & MOTI</h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 3700</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-141.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-141</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ & SMOKY</h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 1300</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-142.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-142</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL & MONALISSA</h5>
                                 <p class="card-text">Length: 20 INCH</p>
                                 <p class="h4 my-0">Rs 7500</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-143.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-143</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 3500</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-144.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-144</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">FLORITE, BAROKE PEARL </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 16000</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-145.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-145</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3500</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-146.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-146</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MOON STONE & MOTI </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 4500</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-147.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-147</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">CARNELIAN,QUARTZ AND PEARL </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-148.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-148</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BAROKE PEARL </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 24000</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-149.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-149</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BAROKE PEARL, AGATE </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 2400</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-150.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-150</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ, MOP FLOWER </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 2500</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-151.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-151</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL </h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 4500</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-152.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-152</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ROSE QUARTZ, PEARL  </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-153.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-153</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MOON STONES, DRUZY, QUARTZ </h5>
+                                <p class="card-text">Length: 24 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-154.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-154</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK SPINAL, PEARL </h5>
+                                <p class="card-text">Length: 24 INCH</p>
+                                <p class="h4 my-0">Rs 4000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-155.png" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-155</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK ONEX, PEARL </h5>
+                                <p class="card-text">Length: 14 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-156.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-156</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK SPINAL AND PEARL </h5>
+                                <p class="card-text">Length: 24 INCH</p>
+                                <p class="h4 my-0">Rs 4700</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-157.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-157</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL AND RODOLITE </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 4500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-158.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-158</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL, NATURAL GEMS STONES </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 2700</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-159.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-159</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ AND PEARL </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-160.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-160</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MOON STONE & AGATE </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-161.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-161</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ, PEARL AND SILVER </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 7500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-162.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-162</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK SPINAL AND SILVER  </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 4000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-163.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-163</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">CITRIN AND MOON STONE  </h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 6000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-164.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-164</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">RODOLITE </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 2500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-165.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-165</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL, QUARTZ, AQUA </h5>
+                                <p class="card-text">Length: 18 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-166.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-166</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">QUARTZ AND PEARL </h5>
+                                <p class="card-text">Length: 22 INCH</p>
+                                <p class="h4 my-0">Rs 3000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-167.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-167</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">MOTHER OF PEARL AND SMOKY </h5>
+                                <p class="card-text">Length: 34 INCH</p>
+                                <p class="h4 my-0">Rs 3300</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-168.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-168</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">AGATE </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-169.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-169</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PEARL </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 1500</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card m-3  catageory_items">
+                            <img src="./images/products/beads/gs-170.jpg" class="card-img-top" alt="AMETHYST">
+                            <div class="sql_tag  text-black">
+                                <p class="rounded-pill p-1 px-3">GS-170</p>
+                            </div>
+                            <div class="m-3   w-25  position-absolute bottom-0 end-0">
+                                <div class="input-group input-group-sm ">
+                                    <span class="input-group-text bg-success text-white bg-opacity-60"
+                                        id="inputGroup-sizing-sm" class="d-inline-block" tabindex="0"
+                                        data-toggle="tooltip" title="In Stock"><b>In</b></span>
+                                    <span class="form-control d-flex justify-content-center"
+                                        aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm">9</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">CARNELIAN AND PEARL </h5>
+                                <p class="card-text">Length: 20 INCH</p>
+                                <p class="h4 my-0">Rs 5500</p>
                             </div>
                         </div>
                     </div>
@@ -362,50 +1552,84 @@
 
     <!-- catagory 1 close -->
 
-      <!-- Footer -->
-  <footer class="footer-section">
-    <div class="d-flex container justify-content-between align-items-center">
-      <div class="container row pt-1">
-        <div class="col-lg-3 p-1 my-3 footer_logo d-flex justify-content-center">
-          <img src="./images/logo color.png" class="img-fluid h-100 " alt="">
-        </div>
-        <div class="col-lg-4 d-flex my-3 justify-content-center align-items-center">
-          <p class="m-0">&#169 All rights reserved Meraki</p>
-        </div>
-        <div class="col-lg-5 d-flex justify-content-center my-3 align-items-center">
-          <ul class="d-flex mb-0 p-0 justify-content-center align-items-center">
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-envelope text-white"></i></a>
-            </li>
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-instagram text-white"></i></a>
-            </li>
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-linkedin text-white"></i></a>
-            </li>
-            <li class="mx-3 my-1 px-2">
-              <a href="#"><i class="bi bi-twitter text-white"></i></a>
-            </li>
+    <div class=" our_collection_toggle" id="catageories">
+        <div class=" position-fixed toggle_div ">
+          <ul class="bg-white px-5 py-4 w-100">
+            <li><a class="dropdown-item p-3" href="./catageory.html">Necklace</a></li>
+            <li><a class="dropdown-item p-3" href="./earrings_catagerory.html">Ear Rings</a></li>
+            <li><a class="dropdown-item p-3" href="./healingStone_catageory.html">Healing Stones</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </footer> 
-
-    <!-- script open -->
-      <script>
-        let header = document.getElementById("header");
-        window.onscroll= function (){
+         </div>
+       </div>
+      
+        <!-- Footer -->
+        <footer class="footer-section py-3">
+          <div class="d-flex container justify-content-between align-items-center">
+            <div class="container row pt-1">
+              <div class="col-lg-3 p-1 my-3 footer_logo d-flex justify-content-center">
+                <img src="./images/logo color.png" class="img-fluid h-100 " alt="">
+              </div>
+              <div class="col-lg-4 d-flex my-3 justify-content-center align-items-center">
+                <p class="m-0">&#169 All rights reserved Meraki</p>
+              </div>
+              <div class="col-lg-5 d-flex justify-content-center my-3 align-items-center">
+                <ul class="d-flex mb-0 p-0 justify-content-center align-items-center">
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-envelope text-white"></i></a>
+                  </li>
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-instagram text-white"></i></a>
+                  </li>
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-linkedin text-white"></i></a>
+                  </li>
+                  <li class="mx-3 my-1 px-2">
+                    <a href="#"><i class="bi bi-twitter text-white"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div>
+            <footer class="container-fluid footer d-md-none position-fixed footer_bar " style="bottom: 0; ">
+              
+              <div class="row bg-black text-center pt-2">
+                  <a href="./catageory.html" class="col h4 text-white "><i class="bi bi-house-door"></i></a>
+                  
+                  <div class="col h-100" id="toggle_icon">
+                   
+                    <a class="text-white h4 h-100" href="#"  data-bs-toggle="dropdown" >
+                      <i class="bi bi-grid " class="bg-grey h-100"></i>
+                    </a>
+                  
+                  </div>
+                  <a href="#" class="col h4 text-white "><i class="bi bi-person"></i></a>
+              </div>
+          </footer>
+          </div>
+        </footer>
+        <!-- script open -->
+        <script>
+          let header = document.getElementById("header");
+          window.onscroll = function () {
             let scroll = window.scrollY;
-            if(scroll>0){
-                header.classList.add("scrol")
+            if (scroll > 0) {
+              header.classList.add("scrol")
             }
-            else{
-                header.classList.remove("scrol")
+            else {
+              header.classList.remove("scrol")
             }
-        }
-      </script>
-    <!-- script close -->
+          }
+      
+          let catageory =document.getElementById("catageories");
+          let toggle_icon =document.getElementById("toggle_icon");
+      
+          toggle_icon.addEventListener("click",()=>{
+            catageory.classList.toggle("toggle_display")
+          })
+        </script>
+        <!-- script close -->
 </body>
 
 </html>

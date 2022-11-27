@@ -40,6 +40,9 @@ ul {
 /* top label header close */
 
 /* header open */
+#header{
+  z-index: 1000;
+}
 .headerLogo img {
     height: 50px !important;
 }
@@ -51,18 +54,65 @@ ul {
   transition: 0.5s;
 }
 
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #000;
+  transition: width 0.5s ease-in-out;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+
+
 /* header close */
 
 /* ourCollection_hover open */
 
-/* .ourCollection_hover{
-    max-width:900px;
-     overflow-x:scroll !important;
-} */
+
 .ourCollection_hover .figure img {
-    height: 220px;
-    width: 220px;
+    height: 400px;
+    width: auto;
 }
+@media (max-width:1600px){
+  .ourCollection_hover .figure img{
+    height: 350px;
+  }}
+  @media (max-width:1400px){
+    .ourCollection_hover .figure img{
+      height: 300px;
+    }
+  }
+  @media (max-width:1200px){
+    .ourCollection_hover .figure img{
+      height: 250px;
+
+    }
+  }
+  @media (max-width:1000px){
+    .ourCollection_hover .figure img{
+      height: 230px;
+    }
+  }
+  @media (max-width:930px){
+    .ourCollection_hover .figure img{
+      height: 200px;
+    }
+  }
+  @media (max-width:766px){
+    .footer-section{
+      margin-bottom: 30px;
+    }
+  }
 /* ourCollection_hover close */
 
 .ourCollection_item {
@@ -83,41 +133,47 @@ ul {
 .ourCollection_headline {
     font-size: 30px;
     border-bottom: 1px solid rgb(207 207 207 / 38%);
-    margin: auto auto 16px 34px;
+    margin: auto auto 0px 34px;
 }
 
 .ourCollection_sm_text {
-    background-color: rgb(242 242 242);
-    border-radius: 8px;
-    padding-left: 28px;
-    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
-.ourCollection_sm_text ul li {
-    padding: 20px 0px 0px 0px;
-    font-size: 20px;
+.ourCollection_sm_text ul li a{
+  color: white;
 }
 
-.ourCollection_sm_text ul li:nth-child(2) {
-    border-bottom: none !important;
+.our_collection_hoverList{
+ 
+  margin: auto 2px;
 }
-
 .ourCollection_div {
     display: none;
     position: absolute;
-    left: 0;
     right: 0;
-    padding-top: 30px;
+    left: 0;
+    padding: 30px 0px 0px 0px;
     z-index: 999;
+    transition: .5s ease
+    
 }
 
 .ourCollection_images {
-    padding: 30px 20px 0px 0px;
+    padding: 30px 0px 0px 0px;
     box-shadow: 1px 1px 20px 6px #65645d1f;
-    border-radius: 8px;
     background: white;
-}
 
+}
+.ourCollection_hover .card{
+  --bs-card-border-width: 0px;
+}
+.ourCollection_hover .card .card-body{
+  bottom: 3px;
+  color: white;
+  font-size: 20px;
+}
 .ourCollection:hover .ourCollection_div {
     display: block;
 }
@@ -244,6 +300,70 @@ ul {
 .header {
   text-align: center;
   padding: 32px;
-  
-  
+}
+
+.our_collection_toggle{
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  top: 0;
+  display: none;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.toggle_div{
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.our_collection_toggle .toggle_div ul{
+  border-radius: 10px;
+  font-size: 18px;
+}
+.toggle_display{
+  display: flex !important;
+}
+.footer_bar{
+  bottom: 0;
+  z-index: 100;;
+
+}
+
+
+
+/* catageoey sections */
+
+/* catageory_items open */
+.catageory_title{
+  letter-spacing: 2px;
+}
+.sql_tag {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.sql_tag p{
+  background-color: rgba(255, 255, 255, 0.749);
+}
+/* catageory items close */
+.footer-section {
+  position: relative;
+  background-color: black;
+  color: white;
+  bottom: 0;
+}
+.footer_logo{
+  height: 70px;
+}
+
+.healing_banner{
+  max-height: 90vh;
 }
